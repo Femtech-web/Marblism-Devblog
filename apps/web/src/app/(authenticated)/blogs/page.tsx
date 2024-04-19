@@ -52,7 +52,10 @@ export default function BlogListPage() {
   return (
     <PageLayout layout="narrow">
       <Title level={2}>My Blog Posts</Title>
-      <Row style={{ display: "flex", justifyContent: "flex-between"}}>
+      <Row style={{ 
+          display: "flex", 
+          justifyContent: "space-between",
+          }}>
         <Text type="secondary">Manage and interact with your content.</Text>
         <Button
           type="primary"
