@@ -79,6 +79,7 @@ export default function BlogDetailPage() {
         value={newComment}
         onChange={e => setNewComment(e.target.value)}
         placeholder="Add a comment..."
+        style={{ marginBottom: 20, marginTop: 25}}
       />
       <Button
         type="primary"
