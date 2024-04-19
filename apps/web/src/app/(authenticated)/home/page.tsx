@@ -50,9 +50,17 @@ export default function HomePage() {
                     size={64}
                     src={post.user.pictureUrl}
                     alt={post.user?.name}
+                    style={{
+                      marginTop: 20,
+                      marginLeft: 16
+                     }}
                   />
                 ) : (
-                  <Avatar size={64} icon={<ReadOutlined />} />
+                  <Avatar size={64} icon={<ReadOutlined />} 
+                  style={{
+                    marginTop: 20,
+                    marginLeft: 16
+                   }}/>
                 )
               }
               title={post.title}

@@ -52,14 +52,16 @@ export default function BlogListPage() {
   return (
     <PageLayout layout="narrow">
       <Title level={2}>My Blog Posts</Title>
-      <Text type="secondary">Manage and interact with your content.</Text>
-      <Button
-        type="primary"
-        onClick={handleCreateNew}
-        style={{ marginBottom: 16, display: "block" }}
-      >
-        Create New Post
-      </Button>
+      <Row style={{ display: "flex", justifyContent: "flex-between"}}>
+        <Text type="secondary">Manage and interact with your content.</Text>
+        <Button
+          type="primary"
+          onClick={handleCreateNew}
+          style={{ marginBottom: 16, display: "block" }}
+        >
+          Create New Post
+        </Button>
+      </Row>
       <Row gutter={[16, 16]}>
         {posts?.map(post => (
           <Col key={post.id} xs={24} sm={12}>
