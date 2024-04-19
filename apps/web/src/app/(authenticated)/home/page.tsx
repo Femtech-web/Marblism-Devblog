@@ -40,7 +40,7 @@ export default function HomePage() {
       </Text>
       <Row gutter={[16, 16]} style={{ marginTop: 20 }}>
         {posts?.map(post => (
-          <Col key={post.id} xs={24} sm={12} md={8} lg={6}>
+          <Col key={post.id} xs={24} sm={12}>
             <Card
               hoverable
               onClick={() => router.push(`/blog/${post.id}`)}

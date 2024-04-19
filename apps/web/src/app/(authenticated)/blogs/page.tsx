@@ -56,13 +56,13 @@ export default function BlogListPage() {
       <Button
         type="primary"
         onClick={handleCreateNew}
-        style={{ marginBottom: 16 }}
+        style={{ marginBottom: 16, display: "block" }}
       >
         Create New Post
       </Button>
       <Row gutter={[16, 16]}>
         {posts?.map(post => (
-          <Col key={post.id} xs={24} sm={12} md={8} lg={6}>
+          <Col key={post.id} xs={24} sm={12}>
             <Card
               title={post.title}
               actions={[
