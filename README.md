@@ -1,23 +1,24 @@
-<div style="background: black;">
-<p align="center" style="margin: 0;">
-  <a href="https://dev.marblism.com" target="blank">
-    <img src="https://marblism-dashboard-api--production-public.s3.us-west-1.amazonaws.com/marblism-logo.png" height="150" alt="Marblism Logo" />
-  </a>
-</p>
-<h1 align="center" style="margin: 0;">In Marble We Trust</h1>
+# DevBlog
 
-<a  style="margin: 0;" target="_blank" href="https://marblism.com">
-<p align="center" style="margin: 0; letter-spacing: 3px;
-text-decoration: none;">
-marblism
-</p>
-</a>
-</div>
-<div style="height: 50px; background: linear-gradient(#000000, transparent);"></div>
+DevBlog is a full-stack web application that allows users to create, edit, delete, and manage their own blog posts. Whether you're a developer looking to share your insights, document your projects, or simply express your thoughts, DevBlog provides a simple and intuitive platform to do so.
 
-## Documentation
+## Features
 
-Learn more in the [official documentation](https://dev.marblism.com).
+- **User Authentication**: Users can sign up, log in, and log out securely.
+- **Create, Read, Update, Delete (CRUD) Operations**: Users can create new blog posts, view existing posts, edit their own posts, and delete posts they no longer wish to keep.
+- **Responsive Design**: DevBlog is designed to be fully responsive, ensuring a seamless experience across devices of all sizes.
+- **User Profiles**: Each user has their own profile page where they can view all their published blog posts.
+- **Search Functionality**: Users can search for specific blog posts by title or content.
+- **Comments**: Enable comments on blog posts to foster discussion and engagement.
+- **Tags/Categories**: Organize blog posts by tags or categories for easy navigation and discovery.
+
+## Technologies Used
+
+- **Frontend**: HTML, CSS, JavaScript, React.js, Antdesign
+- **Backend**: Node.js, Nest.js, Postgresql
+- **Authentication**: JSON Web Tokens (JWT)
+- **Database**: Postgresql 
+- **Deployment**: Heroku
 
 ## Installation
 
