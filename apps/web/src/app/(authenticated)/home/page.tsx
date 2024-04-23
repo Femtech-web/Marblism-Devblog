@@ -34,7 +34,7 @@ export default function HomePage() {
 
   return (
     <PageLayout layout="narrow">
-      <Title level={2}>Welcome to the Devblog</Title>
+      <Title level={2}>Welcome to Devblog</Title>
       <Text type="secondary">
         Here you can find the latest posts from our community.
       </Text>

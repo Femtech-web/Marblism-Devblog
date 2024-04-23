@@ -52,22 +52,17 @@ export default function BlogListPage() {
   return (
     <PageLayout layout="narrow">
       <Title level={2}>My Blog Posts</Title>
-      <Row style={{ 
-          display: "flex", 
-          justifyContent: "space-between",
-          }}>
-        <Text type="secondary">Manage and interact with your content.</Text>
-        <Button
-          type="primary"
-          onClick={handleCreateNew}
-          style={{ marginBottom: 16, display: "block" }}
-        >
-          Create New Post
-        </Button>
-      </Row>
+      <Text type="secondary">Manage and interact with your content.</Text>
+      <Button
+        type="primary"
+        onClick={handleCreateNew}
+        style={{ marginBottom: 16 }}
+      >
+        Create New Post
+      </Button>
       <Row gutter={[16, 16]}>
         {posts?.map(post => (
-          <Col key={post.id} xs={24} sm={12}>
+          <Col key={post.id} xs={24} sm={12} md={8} lg={6}>
             <Card
               title={post.title}
               actions={[
@@ -90,3 +85,7 @@ export default function BlogListPage() {
     </PageLayout>
   )
 }
+
+
+
+ 
